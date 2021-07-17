@@ -14,13 +14,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome <?php echo $_COOKIE['loggeduser'] ?></h1>
-    <table>
-        <tr>
-            <td>Add Something</td>
-            <td>Add Something</td>
-        </tr>
-    </table>
+    <h1 align="center">Welcome <?php echo $_COOKIE['loggeduser']; ?></h1>
+    <a href="add_product.php">Add product</a>
+	 <a href="">All product</a>
+	 <a href="">All Catagories</a>
 
 </body>
 </html>

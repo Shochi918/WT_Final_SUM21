@@ -5,7 +5,7 @@
     $pass_error="";
     $hasError=false;
 
-    $users=array("tanvir"=>"1234","ifty"=>"3456","karim"=>"789","rahim"=>"101112");
+    $users=array("tanvir"=>"1234","Shochi"=>"4567","karim"=>"7891","rahim"=>"101110");
 
     if($_SERVER['REQUEST_METHOD']=='POST')
     {
@@ -21,7 +21,7 @@
         if(empty($_POST['pass']))
         {
             $hasError=true;
-            $u_name_error="Passwoerd is Empty";
+            $u_name_error="Password is Empty";
         }
         else
         {
@@ -55,9 +55,9 @@
 </head>
 <body>
     <form action="" method="post">
-        <input type="text" name="uname">
+        UserName:<input type="text" name="uname">
         <br>
-        <input type="password" name="pass">
+        Password:<input type="password" name="pass">
         <br>
         <input type="submit" value="Login">
     </form>
