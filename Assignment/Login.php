@@ -1,53 +1,26 @@
 <?php 
-	 include 'Controller/Temp.php';
+	  include 'main_header.php';
+	  include 'controllers/UserController.php';
 ?>
-<html>
-<head>
+
+	<h1 >Login</h1>
+	<h5 ><?php echo $err_db;?></h5>
+	<form action="" method="post" >
 	
-	<title> Login</title>
-</head>
-<body>
-      <h3>Login</h3>
+			<h4 >Username</h4> 
+			<input type="text" name="uname" value="<?php echo $uname;?> ">
+			<span ><?php echo $err_uname;?></span>
+	
+			<h4 >Password</h4> 
+			<input type="password" name ="pass" value ="<?php echo $pass;?>" >
+            <span ><?php echo $err_pass;?></span>
+		
 
-      <form action="" method="Post">
-      	    <table>
-      	    	   <tr>
-				       <td>
-      	    	   	   	   Email:
-      	    	   	   </td>
 
-      	    	   	   <td>
-      	    	   	   	   <input type="text" name="email" value="<?php echo $email;?>">
-      	    	   	   </td>
+			<input type="submit" name="btn_login" value="Login" >
+	
+			<a href="signup.php" >Not registered yet? Sign Up</a>
+		
+	</form>
 
-      	    	   	   <td>
-      	    	   	   	   <?php echo $err_email;?>
-      	    	   	   </td>
-      	    	   </tr>
-				   
-				   <tr>
-      	    	   	   <td>
-      	    	   	   	   Password:
-      	    	   	   </td>
-
-      	    	   	   <td>
-      	    	   	   	   <input type="Password" name="password" value="<?php echo $pass;?>">
-      	    	   	   </td>
-
-      	    	   	   <td>
-      	    	   	   	   <?php echo $err_pass;?>
-      	    	   	   </td>
-      	    	   </tr>
-				   
-				   
-                            <tr>
-						     <td align="center" colspan="2"><input type="submit" value="Login" name="login"></td>
-					        </tr>
-      	    	   </tr>
-
-      	    	   <?php echo $err_db; ?>
-      	    	 
-      	    </table>
-      </form>
-</body>
-</html>
+<?php include 'main_footer.php';?>
