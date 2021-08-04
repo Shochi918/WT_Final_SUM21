@@ -10,16 +10,16 @@
 		</thead>
 		<tbody>
 			<td>1</td>
-			<td>Ginger</td>
-			<td>120</td>
+			<td>Potato</td>
+			<td>60</td>
 			<td>10</td>
 			<td>13.7.2021</td>
 		</tbody>
         <tbody>
 			<td>2</td>
-			<td>Beef</td>
-			<td>550</td>
-			<td>10</td>
+			<td>Chicken</td>
+			<td>300</td>
+			<td>20</td>
 			<td>13.7.2021</td>
 		</tbody>
 	</table>
